@@ -1,7 +1,6 @@
 # Load data
 NEI <- readRDS("summarySCC_PM25.rds")
 SCC <- readRDS("Source_Classification_Code.rds")
-
 # Identify coal-related SCC codes
 coal_scc <- SCC[grepl("Coal", SCC$Short.Name, ignore.case = TRUE), "SCC"]
 
