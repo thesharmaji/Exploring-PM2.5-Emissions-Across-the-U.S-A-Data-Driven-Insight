@@ -1,6 +1,5 @@
 # Load data
 NEI <- readRDS("summarySCC_PM25.rds")
-
 # Aggregate total emissions by year
 total_emissions <- aggregate(Emissions ~ year, NEI, sum)
 
