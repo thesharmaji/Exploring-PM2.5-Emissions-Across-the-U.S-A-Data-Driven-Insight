@@ -4,6 +4,7 @@ NEI <- readRDS("summarySCC_PM25.rds")
 # Subset Baltimore
 baltimore <- NEI[NEI$fips == "24510", ]
 
+
 # Aggregate by year
 baltimore_total <- aggregate(Emissions ~ year, baltimore, sum)
 
